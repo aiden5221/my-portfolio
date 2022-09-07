@@ -81,6 +81,8 @@ p.success {
 p.danger {
 	color: red;
 }
+
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -235,6 +237,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
+  box-shadow: -25px -25px 50px 0 #181414 inset; 
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -302,7 +305,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Skills Css ************/
 .skill {
-  padding: 0 0 50px 0;
+  padding: 50px 0 50px 0;
   position: relative;
 }
 .skill-bx {
@@ -332,19 +335,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 50%;
   margin: 0 auto 15px auto;
 }
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
+
+.continue-background {
+  background-image: url('./assets/img/color-sharp2.png');
+
+  background-size: cover;
+  background-position: center;
 }
 
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
 }
 .project h2 {
 	font-size: 45px;
@@ -541,9 +543,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding: 0 0 50px 59;
   background-image: url('./assets/img/footer-bg.png');
   background-position: center center;
   background-size: cover;

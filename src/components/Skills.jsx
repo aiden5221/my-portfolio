@@ -1,10 +1,12 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Meter1 from '../assets/img/meter1.svg';
-import Meter2 from '../assets/img/meter2.svg';
-import Meter3 from '../assets/img/meter3.svg';
-import colorSharp from '../assets/img/color-sharp.png';
+import Skill1 from '../assets/img/skill1.svg';
+import Skill2 from '../assets/img/skill2.svg';
+import Skill3 from '../assets/img/skill3.svg';
+import Skill4 from '../assets/img/skill4.svg';
+import Skill5 from '../assets/img/skill5.svg';
+
 
 const Skills = () => {
     const responsive = {
@@ -39,27 +41,30 @@ const Skills = () => {
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque commodi ad alias numquam ipsum quam amet, debitis architecto dolor cum doloribus voluptate, quo nihil odio, atque quod magni tenetur fugiat!</p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'> 
                                 <div className="item">
-                                    <img src={Meter1} alt="skill image" />
-                                    <h5>Web Development 1</h5>
+                                    <img src={Skill1} alt="skill image" />
+                                    <h5>Javascript</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Meter2} alt="skill image" />
-                                    <h5>Web Development 2</h5>
+                                    <img src={Skill5} alt="skill image" />
+                                    <h5>Sass</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Meter3} alt="skill image" />
-                                    <h5>Web Development 3</h5>
+                                    <img src={Skill3} alt="skill image" />
+                                    <h5>React</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={Meter1} alt="skill image" />
-                                    <h5>Web Development 4</h5>
+                                    <img src={Skill2} alt="skill image" />
+                                    <h5>HTML5</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Skill4} alt="skill image" />
+                                    <h5>Git</h5>
                                 </div>
                             </Carousel>
                         </div>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp}/>
         </section>
       )
 }

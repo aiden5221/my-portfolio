@@ -8,7 +8,7 @@ const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [currentText, setCurrentText] = useState('');
-    const toRotate = ['AspiringFullStackDev', 'WebDeveloper']
+    const toRotate = ['BackendDev', 'WebDeveloper','FrontendDev']
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     const period = 2000;
 
@@ -50,7 +50,7 @@ const Banner = () => {
                         {({ isVisible }) => 
                             <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
                                 <span className='tagline'> Welcome to my Portfolio!</span>
-                                <h1>{`Hi I'm Aiden, <`}<span className='wrap'>{currentText}{'/>'}</span></h1>
+                                <h1>{`Hi I'm Aiden,`}<span className='wrap'><br/>{'<'}{currentText}{'/>'}</span></h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quam hic impedit, cumque fugiat atque minus veniam repellat itaque nisi aut vel, ipsa tempora, consequuntur necessitatibus culpa pariatur commodi? Accusantium.</p>
                                 <button onClick={() => console.log('connect button')}> Let's connect <ArrowRightCircle size={25} /></button>
                             </div>}
