@@ -7,24 +7,28 @@ const Projects = () => {
     let pepe = 'https://ichef.bbci.co.uk/news/976/cpsprodpb/16620/production/_91408619_55df76d5-2245-41c1-8031-07a4da3f313f.jpg'
     const projects = [
         {
-            title:'Project 1',
-            description:'Description 1',
+            title:'React Task Tracker',
+            description:'A simple task tracking React SPA',
             imgUrl: 'https://user-images.githubusercontent.com/72046405/187979396-f29dd497-356a-4ba1-820a-09dd9d95883c.png',
+            repoUrl: 'https://github.com/aiden5221/ReactJS-TaskManager',
         },
         {
-            title:'Project 2',
-            description:'Description 2',
-            imgUrl: pepe,
+            title:'Crown Clothing Store',
+            description:'Fully functional store created using Redux, Redux Sagas, Stripe payment, Typescript, React-Router and Firebase for authentication!',
+            imgUrl: 'https://user-images.githubusercontent.com/72046405/188022390-e492f090-600f-4577-acdf-aa6e883f8bd7.png',
+            repoUrl: 'https://github.com/aiden5221/StoreProj',
         },
         {
             title:'Project 3',
             description:'Description 3',
             imgUrl: pepe,
+            repoUrl: '',
         },
         {
             title:'Project 4',
             description:'Description 4',
             imgUrl: pepe,
+            repoUrl: '',
         },
     ]
 
@@ -41,42 +45,25 @@ const Projects = () => {
                         </div>}
                     </TrackVisibility>
                         <Tab.Container id="project-tabs" defaultActiveKey='first'>
-                            <Nav variant="pills">
-                                <Nav.Item>
-                                    <Nav.Link eventKey='first'>
-                                        Javascript
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="second">
-                                        Option 2
-                                    </Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="third">
-                                        Disabled
-                                    </Nav.Link>
-                                </Nav.Item>
-                            </Nav>
-                        <Tab.Content className="projects">
-                            <Tab.Pane eventKey='first'>
-                                <Row>
-                                    {
-                                        projects.map((project,index) => {
-                                            return(
-                                                <ProjectCard key={index} {...project}/>
-                                            )
-                                        })
-                                    }
-                                </Row>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey='second'>
-                                    project 2
-                            </Tab.Pane>
-                            <Tab.Pane eventKey='third'>
-                                    project 3
-                            </Tab.Pane>
-                        </Tab.Content>
+                            <Tab.Content className="projects">
+                                <Tab.Pane eventKey='first'>
+                                    <Row>
+                                        {
+                                            projects.map((project,index) => {
+                                                return(
+                                                    <ProjectCard key={index} {...project}/>
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='second'>
+                                        project 2
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='third'>
+                                        project 3
+                                </Tab.Pane>
+                            </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>

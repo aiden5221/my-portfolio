@@ -6,6 +6,7 @@ import Skill2 from '../assets/img/skill2.svg';
 import Skill3 from '../assets/img/skill3.svg';
 import Skill4 from '../assets/img/skill4.svg';
 import Skill5 from '../assets/img/skill5.svg';
+import Skill6 from '../assets/img/skill6.svg';
 
 
 const Skills = () => {
@@ -59,6 +60,10 @@ const Skills = () => {
                                 <div className="item">
                                     <img src={Skill4} alt="skill image" />
                                     <h5>Git</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={Skill6} alt="skill image" />
+                                    <h5>Docker</h5>
                                 </div>
                             </Carousel>
                         </div>

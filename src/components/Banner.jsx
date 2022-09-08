@@ -11,7 +11,7 @@ const Banner = () => {
     const toRotate = ['BackendDev', 'WebDeveloper','FrontendDev']
     const [delta, setDelta] = useState(300 - Math.random() * 100)
     const period = 2000;
-
+    const resumeLink = 'https://drive.google.com/file/d/1uqfGsoz1gEhpNphUAbXcHAJQVNo1TWEx/view?usp=sharing';
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
@@ -22,8 +22,8 @@ const Banner = () => {
 
     const tick = () => {
         let i = loopNum % toRotate.length;
-        let fullText = toRotate[i]
-        let updatedText = isDeleting ? fullText.substring(0, currentText.length - 1) : fullText.substring(0, currentText.length + 1)
+        let fullText = toRotate[i];
+        let updatedText = isDeleting ? fullText.substring(0, currentText.length - 1) : fullText.substring(0, currentText.length + 1);
         
         setCurrentText(updatedText);
 
@@ -40,7 +40,7 @@ const Banner = () => {
             setDelta(500);
         }
     }
-
+    
     return (
         <section className="banner" id="home">
             <Container>
@@ -52,7 +52,7 @@ const Banner = () => {
                                 <span className='tagline'> Welcome to my Portfolio!</span>
                                 <h1>{`Hi I'm Aiden,`}<span className='wrap'><br/>{'<'}{currentText}{'/>'}</span></h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quam hic impedit, cumque fugiat atque minus veniam repellat itaque nisi aut vel, ipsa tempora, consequuntur necessitatibus culpa pariatur commodi? Accusantium.</p>
-                                <button onClick={() => console.log('connect button')}> Let's connect <ArrowRightCircle size={25} /></button>
+                                <a href={resumeLink} target='_blank' className='click-link'><button> View resume <ArrowRightCircle size={25} /></button></a>
                             </div>}
                         </TrackVisibility>
                     </Col>

@@ -35,10 +35,10 @@ router.post("/contact", (req, res) => {
   const email = req.body.email;
   const message = req.body.message;
   const phone = req.body.phone;
-  console.log('hi3')
+
   const mail = {
     from: name,
-    to: "aidenjr521@gmail.com",
+    to: "aidenjr521@hotmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
@@ -47,10 +47,10 @@ router.post("/contact", (req, res) => {
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-        console.log('hi')
-        res.json(error);
+      console.log('error occurred')
+      res.json(error);
     } else {
-        console.log('h2i')
+      console.log('sending message')
       res.json({ code: 200, status: "Message Sent" });
     }
   });

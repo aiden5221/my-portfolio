@@ -343,6 +343,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center;
 }
 
+.repo-link {
+  
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -445,6 +449,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  color: white;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -461,6 +466,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+ 
 }
 .background-image-right {
   top: 20%;
@@ -469,6 +475,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+.click-link {
+  text-decoration: none;
 }
 
 /************ Projects Css ************/
