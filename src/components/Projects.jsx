@@ -19,10 +19,10 @@ const Projects = () => {
             repoUrl: 'https://github.com/aiden5221/StoreProj',
         },
         {
-            title:'Project 3',
-            description:'Description 3',
-            imgUrl: pepe,
-            repoUrl: '',
+            title:'Showtime Express',
+            description:'Showtime Express is an interactive movie nomination application that allows the user to select 5 of their favorite movies queried from the OMDB API. Created using React, Redux and Material UI.',
+            imgUrl: 'https://user-images.githubusercontent.com/72046405/190945631-2c0ba1e0-2e1e-43f0-a8bc-a882ce7980fd.png',
+            repoUrl: 'https://github.com/aiden5221/Showtime-Express',
         },
         {
             title:'Project 4',
