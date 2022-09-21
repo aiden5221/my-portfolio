@@ -1,5 +1,5 @@
 import { Col } from "react-bootstrap";
-import { useEffect } from "react";
+
 const ProjectCard = ({ title, description, imgUrl, repoUrl}) => {
     return(
         <Col sm={6} md={4}>

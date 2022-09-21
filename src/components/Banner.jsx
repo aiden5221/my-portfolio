@@ -51,7 +51,7 @@ const Banner = () => {
                             <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
                                 <span className='tagline'> Welcome to my Portfolio!</span>
                                 <h1>{`Hi I'm Aiden,`}<span className='wrap'><br/>{'<'}{currentText}{'/>'}</span></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quam hic impedit, cumque fugiat atque minus veniam repellat itaque nisi aut vel, ipsa tempora, consequuntur necessitatibus culpa pariatur commodi? Accusantium.</p>
+                                <p>Aspiring full stack developer ambitious to learn and gain crucial experience! Currently studying my 4th of Software Engineering at Ontario Tech University! Looking for any opportunities to gain essential experience and fellow colleagues along the way!</p>
                                 <a href={resumeLink} target='_blank' className='click-link'><button> View resume <ArrowRightCircle size={25} /></button></a>
                             </div>}
                         </TrackVisibility>

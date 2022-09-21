@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import colorSharp from './assets/img/color-sharp.png';
+import Experience from './components/Experience';
 function App() {
 
   return (
@@ -15,8 +16,11 @@ function App() {
       <section className='continue-background'>
         <Skills />
         <Projects />
+      
+      <Experience />
       </section>
       <Contact />
+      
     </div>
   );
 }

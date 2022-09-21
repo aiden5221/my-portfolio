@@ -24,12 +24,7 @@ const Projects = () => {
             imgUrl: 'https://user-images.githubusercontent.com/72046405/190945631-2c0ba1e0-2e1e-43f0-a8bc-a882ce7980fd.png',
             repoUrl: 'https://github.com/aiden5221/Showtime-Express',
         },
-        {
-            title:'Project 4',
-            description:'Description 4',
-            imgUrl: pepe,
-            repoUrl: '',
-        },
+      
     ]
 
     return (
@@ -41,7 +36,7 @@ const Projects = () => {
                     {({ isVisible }) => 
                         <div className={isVisible ? 'animate__animated animate__slideInDown ' : ''}>
                             <h2>Projects</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cum mollitia ea porro, ut iusto labore placeat vel laborum fugiat eligendi impedit deleniti quae doloremque soluta ratione totam nesciunt dignissimos.</p>
+                            <p>Some of the projects that I've worked on!<br/>Check out my Github for more!</p>
                         </div>}
                     </TrackVisibility>
                         <Tab.Container id="project-tabs" defaultActiveKey='first'>
@@ -56,12 +51,6 @@ const Projects = () => {
                                             })
                                         }
                                     </Row>
-                                </Tab.Pane>
-                                <Tab.Pane eventKey='second'>
-                                        project 2
-                                </Tab.Pane>
-                                <Tab.Pane eventKey='third'>
-                                        project 3
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
