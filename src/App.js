@@ -16,8 +16,7 @@ function App() {
       <section className='continue-background'>
         <Skills />
         <Projects />
-      
-      <Experience />
+        <Experience />
       </section>
       <Contact />
       
