@@ -671,3 +671,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+.carousel-interests{
+
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-bottom: 5%;
+  border-radius: 25px;
+  background: #201D21;
+  padding: 20px;
+
+}
+
+.carousel-interests img {
+  max-width:100%;
+  max-width:100%;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 5px;
+}
+.carousel-interests h3 {
+  color: #38D8E9;
+}
+.carousel-interests p {
+  color:#38D8E9;
+}
+
+.heading-interests{
+  text-align: center;
+}

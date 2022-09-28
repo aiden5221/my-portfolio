@@ -39,6 +39,7 @@ const Navigation = () => {
                     <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                     <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
                     <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>Experience</Nav.Link>
+                    <Nav.Link href="#interests" className={activeLink === 'interests' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('interests')}>Interests</Nav.Link>
                 </Nav>
                 <span className='navbar-text'>
                     <div className='social-icon'>
