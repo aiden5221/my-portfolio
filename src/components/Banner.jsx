@@ -10,8 +10,10 @@ const Banner = () => {
     const [currentText, setCurrentText] = useState('');
     const toRotate = ['BackendDev', 'WebDeveloper','FrontendDev']
     const [delta, setDelta] = useState(300 - Math.random() * 100)
+
     const period = 2000;
-    const resumeLink = 'https://drive.google.com/file/d/1uqfGsoz1gEhpNphUAbXcHAJQVNo1TWEx/view?usp=sharing';
+    const resumeLink = 'https://drive.google.com/file/d/1yWi5zt8yPRacSTAb15eGWl1_l0dKaqbR/view?usp=sharing';
+
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
