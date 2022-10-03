@@ -68,16 +68,17 @@ const Interests = () => {
                 {
                     interests.map((interest) => {
                         return(
-                            <Carousel.Item>
-                                <div className="image">
+                            
+                            <Carousel.Item >    
                                 <img 
+                                    
                                     src={interest.image}
                                     alt={interest.altImage}/>
-                                </div>
                                 <Carousel.Caption>
                                     <h3>{interest.title}</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
+                            
                         )
                     })
                 }
