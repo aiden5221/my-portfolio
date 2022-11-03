@@ -12,7 +12,7 @@ const Banner = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100)
 
     const period = 2000;
-    const resumeLink = 'https://drive.google.com/file/d/1yWi5zt8yPRacSTAb15eGWl1_l0dKaqbR/view?usp=sharing';
+    const resumeLink = 'https://drive.google.com/file/d/1HxgT_ZTFr1Bjur7J_1qkOl3U99p21Gm9/view?usp=share_link';
 
     useEffect(() => {
         let ticker = setInterval(() => {
