@@ -8,7 +8,7 @@ const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [currentText, setCurrentText] = useState('');
-    const toRotate = ['WebDev', '','']
+    const toRotate = ['WebDev', 'Frontend',]
     const [delta, setDelta] = useState(300 - Math.random() * 100)
 
     const period = 2000;
