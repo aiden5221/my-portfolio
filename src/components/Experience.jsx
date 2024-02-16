@@ -3,7 +3,7 @@ import TrackVisibility from "react-on-screen";
 import 'animate.css';
 
 const Experience = () => {
-    const OMERS_PIC = 'https://www.thestar.com/content/dam/thestar/news/gta/2020/01/07/toronto-asks-pension-provider-how-green-are-our-investments/omers.jpg';
+    const OMERS_PIC = 'https://marvel-b1-cdn.bc0a.com/f00000000209359/www.uoguelph.ca/lang/sites/default/files/styles/large/public/event_image/omers%2Boxford.jpeg?itok=ry2eeotv';
     const ALYPSIS_PIC = 'https://cdn.shopify.com/s/files/1/0414/6056/4130/files/Logo_New_469x.jpg?v=1649946871';
     const OMERS_URL = 'https://www.omers.com/';
     const ALYPSIS_URL = 'https://www.alypsis.com/'

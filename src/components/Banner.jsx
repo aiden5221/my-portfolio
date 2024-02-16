@@ -8,11 +8,11 @@ const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [currentText, setCurrentText] = useState('');
-    const toRotate = ['WebDev', 'Frontend',]
+    const toRotate = ['WebDev', 'Frontend','RPADev','Backend']
     const [delta, setDelta] = useState(300 - Math.random() * 100)
 
     const period = 2000;
-    const resumeLink = 'https://drive.google.com/file/d/1HxgT_ZTFr1Bjur7J_1qkOl3U99p21Gm9/view?usp=share_link';
+    const resumeLink = 'https://drive.google.com/file/d/12U5Dp3g34rU7tcCs23FQZJqDUfbT-0Ly/view?usp=sharing';
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -53,7 +53,7 @@ const Banner = () => {
                             <div className={isVisible ? 'animate__animated animate__fadeIn' : ''}>
                                 <span className='tagline'> Welcome to my Portfolio!</span>
                                 <h1>{`Hi I'm Aiden,`}<span className='wrap'><br/>{'<'}{currentText}{'/>'}</span></h1>
-                                <p>Aspiring full stack developer ambitious to learn and gain crucial experience! Currently studying my 4th of Software Engineering at Ontario Tech University! Looking for any opportunities to gain essential experience and fellow colleagues along the way!</p>
+                                <p>Software Developer eager to learn and apply my skills as a recent graduate with a degree in Software Engineering from Ontario Tech University! Seeking opportunities to gain valuable experience and collaborate with fellow professionals.</p>
                                 <a href={resumeLink} target='_blank' className='click-link'><button> View resume <ArrowRightCircle size={25} /></button></a>
                             </div>}
                         </TrackVisibility>

@@ -19,6 +19,8 @@ import Skill13 from '../assets/img/skills/skill13.svg';
 import Skill14 from '../assets/img/skills/skill14.svg';
 import Skill15 from '../assets/img/skills/skill15.svg';
 import Skill16 from '../assets/img/skills/skill16.svg';
+import Skill17 from '../assets/img/skills/skill17.png';
+import Skill18 from '../assets/img/skills/skill18.png';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -65,6 +67,27 @@ const Skills = () => {
         responsive: responsive,
     };
 
+    const skillsData = [
+        { header: 'Javascript', src: Skill1 },
+        { header: 'HTML5', src: Skill2 },
+        { header: 'React', src: Skill3 },
+        { header: 'Git', src: Skill4 },
+        { header: 'Sass', src: Skill5 },
+        { header: 'Docker', src: Skill6 },
+        { header: 'Spring Boot', src: Skill7 },
+        { header: 'CSS', src: Skill8 },
+        { header: 'Google Cloud Platform', src: Skill9 },
+        { header: 'Postgres', src: Skill10 },
+        { header: 'SQL', src: Skill11 },
+        { header: 'NodeJS', src: Skill12 },
+        { header: 'Firebase', src: Skill13 },
+        { header: 'MongoDB', src: Skill14 },
+        { header: 'Python', src: Skill15 },
+        { header: 'Django', src: Skill16 },
+        { header: 'Blue Prism', src: Skill17 },
+        { header: 'UI Path', src: Skill18 }
+      ];
+
       return (
         <section className="skill" id="skills">
             <Container>
@@ -76,70 +99,14 @@ const Skills = () => {
                             </h2>
                             <p>My technical skills! <br/>These are changing everyday and advancing further as I continue to grow and learn more!</p>
                             <Slider {...settings} > 
-                                <div className="skill-item">
-                                    <img src={Skill1} alt="skill image" />
-                                    <h5>Javascript</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill5} alt="skill image" />
-                                    <h5>Sass</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill3} alt="skill image" />
-                                    <h5>React</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill2} alt="skill image" />
-                                    <h5>HTML5</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill4} alt="skill image" />
-                                    <h5>Git</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill16} alt="skill image" />
-                                    <h5>Django</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill6} alt="skill image" />
-                                    <h5>Docker</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill7} alt="skill image" />
-                                    <h5>Spring Boot</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill8} alt="skill image" />
-                                    <h5>CSS</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill9} alt="skill image" />
-                                    <h5>Google Cloud Platform</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill10} alt="skill image" />
-                                    <h5>Postgres</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill11} alt="skill image" />
-                                    <h5>SQL</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill12} alt="skill image" />
-                                    <h5>NodeJS</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill13} alt="skill image" />
-                                    <h5>Firebase</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill14} alt="skill image" />
-                                    <h5>MongoDB</h5>
-                                </div>
-                                <div className="skill-item">
-                                    <img src={Skill15} alt="skill image" />
-                                    <h5>Python</h5>
-                                </div>
+                                {
+                                    skillsData.map((skill, index) => (
+                                        <div className="skill-item" key={index}>
+                                          <img src={skill.src} alt="skill" />
+                                          <h5>{skill.header}</h5>
+                                        </div>
+                                      ))
+                                }
                             </Slider>
                         </div>
                     </Col>
