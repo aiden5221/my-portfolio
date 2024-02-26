@@ -521,6 +521,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .click-link {
   text-decoration: none;
+  margin-bottom: 0;
+}
+
+.banner-button {
+  margin:0;
 }
 
 /************ Projects Css ************/

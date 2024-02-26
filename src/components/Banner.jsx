@@ -13,6 +13,7 @@ const Banner = () => {
 
     const period = 2000;
     const resumeLink = 'https://drive.google.com/file/d/12U5Dp3g34rU7tcCs23FQZJqDUfbT-0Ly/view?usp=sharing';
+    const wordPressLink = 'https://syntaxsorrows.wordpress.com/'
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -54,7 +55,8 @@ const Banner = () => {
                                 <span className='tagline'> Welcome to my Portfolio!</span>
                                 <h1>{`Hi I'm Aiden,`}<span className='wrap'><br/>{'<'}{currentText}{'/>'}</span></h1>
                                 <p>Software Developer eager to learn and apply my skills as a recent graduate with a degree in Software Engineering from Ontario Tech University! Seeking opportunities to gain valuable experience and collaborate with fellow professionals.</p>
-                                <a href={resumeLink} target='_blank' className='click-link'><button> View resume <ArrowRightCircle size={25} /></button></a>
+                                <a href={resumeLink} target='_blank' className='click-link'><button className='banner-button'> View resume <ArrowRightCircle size={25} /></button></a>
+                                <a href={wordPressLink} target='_blank' className='click-link'><button className='banner-button'> Check out my blog! <ArrowRightCircle size={25} /></button></a>
                             </div>}
                         </TrackVisibility>
                     </Col>

@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import logo from '../assets/img/logo.svg'
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/nav-icon2.svg'
+import navIcon3 from '../assets/img/nav-icon3.svg'
 
 const Navigation = () => {
     const [activeLink, setActiveLink] = useState('home');   
@@ -45,6 +46,7 @@ const Navigation = () => {
                     <div className='social-icon'>
                         <a href='https://www.linkedin.com/in/aidenjolleyruhn/' target='_blank'><img src={navIcon1} alt=''/></a>
                         <a href='https://github.com/aiden5221' target='_blank'><img src={navIcon2} alt=''/></a>
+                        <a href='https://syntaxsorrows.wordpress.com/' target='_blank'><img src={navIcon3} alt=''/></a>
                     </div>
                     <Nav className='me-auto'>
                         <Nav.Link href='#contact' onClick={() => onUpdateActiveLink('contact')}>
