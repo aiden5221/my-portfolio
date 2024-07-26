@@ -7,17 +7,19 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Interests from './components/Interests';
+import Certificates from './components/Certificates';
 function App() {
 
   return (
     <div className="App">
       <Navigation />
-      <Banner />
+        <Banner />
       <section className='continue-background'>
         <Skills />
         <Projects />
         <Experience />
         <Interests />
+        <Certificates />
       </section>
 
       <Contact />

@@ -241,6 +241,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  position:relative;
 }
 .banner .tagline {
   font-weight: 700;
@@ -354,25 +355,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center;
 }
 
+
 .repo-link {
   
+}
+
+.top-experience {
+  width: 80%;
 }
 
 .experience-img {
   max-height: 100%;
   max-width: 80%;
   height: 30vh;
-  width: 30vw;
+  width: 25vw !important;
   overflow: hidden;
   position: relative; 
   margin:auto;
   margin-top: 2%;
+  cursor: pointer;
+  border-radius: 15px !important;
+}
 
-
+@media (max-width: 767px) { 
+  .experience-img {
+      width: 100% !important; 
+      height: 20vh !important;
+  }
+  .top-experience {
+    width: 100%;
+  }
 }
 
 .experience-card {
-  background-color: #333231;
+  background-color: #151515;
   margin-right:2%;
   border-radius: 10%;
 }
@@ -681,11 +697,71 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
-@media all and (min-width:413px) and (max-width: 568px) {
 
+
+.certificates-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5rem;
+}
+
+.certificate {
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.certificate:hover {
+  transform: scale(1.02);
+}
+
+.certificate img {
+  width: 10vw;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+@media (max-width: 1500px) {
+  .certificate img {
+    width: 15vw;
+  }
+}
+
+@media (max-width: 1099px) {
+  .certificate img {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 719px) {
+  .certificate img {
+    width: 30vw;
+  }
+}
+@media (max-width: 415px) {
+  .certificate img {
+    width: 50vw;
+  }
+}
+
+.certificate p {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 1101px){
   .carousel-interests{
-    width: 90%;
-    height: 50%;
+    width: 50%;
+    height: 40%;
     margin: auto;
     margin-bottom: 5%;
     border-radius: 25px;
@@ -697,16 +773,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .carousel-interests img {
     max-width:100%;
     max-width:100%;
-    width: 120vw;
-    height: 40vh;
+    width: 80vw;
+    height: 70vh;
     border-radius: 5px;
   }
-  
 }
-@media all and (min-width:600px){
+
+@media all and (min-width:850px) and (max-width: 1100px) {
   .carousel-interests{
-    width: 60%;
-    height: 70%;
+    width: 80%;
+    height: 40%;
     margin: auto;
     margin-bottom: 5%;
     border-radius: 25px;

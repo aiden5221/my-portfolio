@@ -21,6 +21,9 @@ import Skill15 from '../assets/img/skills/skill15.svg';
 import Skill16 from '../assets/img/skills/skill16.svg';
 import Skill17 from '../assets/img/skills/skill17.png';
 import Skill18 from '../assets/img/skills/skill18.png';
+import Skill19 from '../assets/img/skills/skill19.svg';
+import Skill20 from '../assets/img/skills/skill20.png';
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -85,7 +88,9 @@ const Skills = () => {
         { header: 'Python', src: Skill15 },
         { header: 'Django', src: Skill16 },
         { header: 'Blue Prism', src: Skill17 },
-        { header: 'UI Path', src: Skill18 }
+        { header: 'UI Path', src: Skill18 },
+        { header: 'Amazon Web Services', src: Skill19 },
+        { header: 'Power Automate', src: Skill20 }
       ];
 
       return (
